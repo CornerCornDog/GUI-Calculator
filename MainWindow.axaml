@@ -1,0 +1,103 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Calculator.MainWindow"
+        Title="OOPCalculator"
+        Height="500" Width="500">
+    <StackPanel HorizontalAlignment="Center" Margin="20">
+        <TextBox x:Name="TextBox1" Height="100" Width="400"
+                 TextWrapping="Wrap" 
+                 HorizontalContentAlignment="Right"
+                 TextAlignment="Right"/>
+
+        <Grid ColumnDefinitions="100,100,100,100"
+              RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+              Margin="40">
+
+            <!-- First Row -->
+            <Button x:Name="ButtonAC" Width="50"
+                    Height="50" Click="ACClickHandler" Grid.Row="0"
+                    Grid.Column="0">AC</Button>
+                
+            <Button x:Name="ButtonPLM" Width="50"
+                    Height="50" Click="PLMClickHandler" Grid.Row="0"
+                    Grid.Column="1">+/-</Button>
+                
+            <Button x:Name="ButtonMod" Width="50"
+                    Height="50" Click="ModuloClickHandler" Grid.Row="0"
+                    Grid.Column="2">%</Button>
+                
+            <Button x:Name="ButtonDiv" Width="50"
+                    Height="50" Click="DivisionClickHandler" Grid.Row="0"
+                    Grid.Column="3">/</Button>
+
+            <!-- Second Row -->
+            <Button x:Name="Button1" Width="50"
+                    Height="50" Click="Button1ClickHandler" Grid.Row="1"
+                    Grid.Column="0">1</Button>
+
+            <Button x:Name="Button2" Width="50"
+                    Height="50" Click="Button2ClickHandler" Grid.Row="1"
+                    Grid.Column="1">2</Button>
+
+            <Button x:Name="Button3" Width="50"
+                    Height="50" Click="Button3ClickHandler" Grid.Row="1"
+                    Grid.Column="2">3</Button>
+
+            <Button x:Name="ButtonPlus" Width="50"
+                    Height="50" Click="AdditionClickHandler" Grid.Row="1"
+                    Grid.Column="3">+</Button>
+
+			<!-- Third Row -->
+			<Button x:Name="Button4" Width="50"
+                    Height="50" Click="Button4ClickHandler" Grid.Row="2"
+                    Grid.Column="0">4</Button>
+
+			<Button x:Name="Button5" Width="50"
+                    Height="50" Click="Button5ClickHandler" Grid.Row="2"
+                    Grid.Column="1">5</Button>
+
+			<Button x:Name="Button6" Width="50"
+                    Height="50" Click="Button6ClickHandler" Grid.Row="2"
+                    Grid.Column="2">6</Button>
+
+			<Button x:Name="ButtonMinus" Width="50"
+                    Height="50" Click="SubtractionClickHandler" Grid.Row="2"
+                    Grid.Column="3">-</Button>
+			
+			<!-- Fourth Row -->
+			<Button x:Name="Button7" Width="50"
+                    Height="50" Click="Button7ClickHandler" Grid.Row="3"
+                    Grid.Column="0">7</Button>
+
+			<Button x:Name="Button8" Width="50"
+                    Height="50" Click="Button8ClickHandler" Grid.Row="3"
+                    Grid.Column="1">8</Button>
+
+			<Button x:Name="Button9" Width="50"
+                    Height="50" Click="Button9ClickHandler" Grid.Row="3"
+                    Grid.Column="2">9</Button>
+
+			<Button x:Name="ButtonMultiply" Width="50"
+                    Height="50" Click="MultiplicationClickHandler" Grid.Row="3"
+                    Grid.Column="3">x</Button>
+
+            <!-- Final Row -->
+            <Button x:Name="Button0" Width="150"
+                    Height="50" Click="Button0ClickHandler" Grid.Row="4"
+                    Grid.Column="0" Grid.RowSpan="2">0</Button>
+
+			<Button x:Name="ButtonDecimal" Width="50"
+                    Height="50" Click="ButtonDecimalClickHandler" Grid.Row="4"
+                    Grid.Column="2">.</Button>
+
+			<Button x:Name="ButtonEquals" Width="50"
+                    Height="50" Click="EqualsClickHandler" Grid.Row="4"
+                    Grid.Column="3">=</Button>
+                
+        </Grid>
+        
+    </StackPanel>
+</Window>
